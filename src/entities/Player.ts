@@ -5,11 +5,13 @@ export interface IPlayer {
   h_meters: string;
   last_name: string;
   num?: number;
+  index?: number;
 };
 
 export interface ICardCoinContainerProps {
   colorInches: string;
   image: string;
+  index: number;
 };
 
 export interface INotFoundProps {
@@ -64,8 +66,8 @@ class Player implements IPlayer {
   public last_name: string;
 
   constructor(player: IPlayer, id?: number | bigint, num?: number) {
-    this.num = num || -1;
-    this.id = id || -1;
+    this.num = num ?? -1;
+    this.id = id ?? -1;
     this.first_name = player.first_name;
     this.h_in = player.h_in;
     this.h_meters = player.h_meters;

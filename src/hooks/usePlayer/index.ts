@@ -20,7 +20,8 @@ const usePlayer = () => {
     setIsLoading(true);
     if (players.length > 0 && query !== '') {
       const newNum: number = +query;
-      const filteredPlayers = players.map((player: Player) => new Player( {...player, num: newNum + Number(player.h_in) } ) ).sort((a: any, b: any) => b.num - a.num);
+      const filteredPlayers = players.map((player: Player) => new Player({...player}, player.id, newNum + Number(player.h_in)) ).sort((a: any, b: any) => a.num - b.num);
+      console.log(filteredPlayers);
       setPlayersFiltered(filteredPlayers);
     } else if ( players.length > 0 && query === '') {
       setPlayersFiltered(players);

@@ -17,8 +17,8 @@ const Players: React.FC<IPlayersProps> = ({ loading, data, query, onChangeQuery,
       {loading && <div>Loading...</div>}
       {data.length > 0 ? (
         <ContainerBlog>
-          {data.map((player: Player) => (
-            <CardPlayer key={`card-player-${player.id}`} {...player} />
+          {data.map((player: Player, index: number) => (
+            <CardPlayer key={`card-player-${player.id}`} {...player} index={index} />
           ))}
         </ContainerBlog>
       ) : (

@@ -6,12 +6,12 @@ import ImagePlayer from '../../assets/images/player.png';
 import colorInches from '../../utils/colorInches';
 import { IPlayer } from '../../entities/Player';
 
-const CardPlayer: React.FC<IPlayer> = ({ first_name, h_in, h_meters, last_name, num = -1 }) => (
-  <Container data-testid="card-container" image={ImagePlayer} colorInches={colorInches(+h_in)}>
+const CardPlayer: React.FC<IPlayer> = ({ first_name, h_in, h_meters, last_name, num = -1, index = -1 }) => (
+  <Container data-testid="card-container" image={ImagePlayer} colorInches={colorInches(+h_in)} index={index}>
     <div className="image">
       <div className="header">
         <div>
-          <span>Height ${h_in}, in inches.</span>
+          <span>Height {h_in}, in inches.</span>
         </div>
         <img
           src={Favorite}
@@ -21,7 +21,7 @@ const CardPlayer: React.FC<IPlayer> = ({ first_name, h_in, h_meters, last_name, 
     </div>
     <div className="textos">
       <h2 className="titulo">{first_name}</h2>
-		  <p className="description">BTC: ${last_name}</p>
+		  <p className="description">{last_name}</p>
     </div>
     <div className="line" />
     <div className="footer">

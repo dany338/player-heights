@@ -9,7 +9,7 @@ import {
   MenuItemLink,
   MobileIcon,
 } from './styled';
-import Logo from '../../assets/icons/numbers.svg';
+import Logo from '../../assets/images/suggested_05.png';
 
 const NavBar = () => {
   const location = useLocation();

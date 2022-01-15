@@ -139,7 +139,7 @@ export const Container = styled.div<ICardCoinContainerProps>`
       justify-content: flex-end;
 
       span {
-        color: ${Colors.colorTextDescriptionBlog};
+        color: ${({ index }) => (+index >=0 && +index <=2) ? `${Colors.backgroundColorBadgeRed}` : `${Colors.colorTextDescriptionBlog}`};
         font-family: "Roboto", sans-serif;
         font-weight: 900;
         font-size: 0.75rem;

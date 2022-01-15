@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://imgur.com/hbWmWId.jpg" alt="Project Heights"></a>
 </p>
 
-<h3 align="center">realty-crypto</h3>
+<h3 align="center">player-heights</h3>
 
 <div align="center">
 

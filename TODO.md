@@ -18,7 +18,7 @@ handles the unique state of the application through atomized and smaller particl
 
 - NotFound: When the search field is searched by filter and there are no matches, it displays information that says there are no matches.
 
-- SearchBar: In the search bar you can enter a text and it searches for matches on the coins that are currently displayed. The search is done at the frontend level - locally on the coin object array.
+- SearchBar: In the search bar you can enter a text and it searches for matches on the players that are currently displayed. The search is done at the frontend level - locally on the coin object array.
 
 - TextButton: It is responsible for showing a button of type submit or button as appropriate with its own styles.
 
